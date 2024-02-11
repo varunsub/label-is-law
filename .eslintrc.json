@@ -1,0 +1,20 @@
+{
+    "extends": [
+        "next/core-web-vitals",
+        "plugin:@tanstack/eslint-plugin-query/recommended",
+        "prettier"
+    ],
+    "plugins": ["@tanstack/query", "@typescript-eslint"],
+    "rules": {
+        "no-warning-comments": [
+            1,
+            {
+                "terms": ["todo", "fixme", "xxx", "tbd"]
+            }
+        ],
+        "@tanstack/query/exhaustive-deps": "error",
+        "indent": ["error", 4],
+        "react/jsx-indent": ["error", 4],
+        "@typescript-eslint/no-unused-vars": "error"
+    }
+}
